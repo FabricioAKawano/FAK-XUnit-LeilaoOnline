@@ -6,10 +6,10 @@ namespace FAK.LeilaoOnline.Core
 {
     public class Lance
     {
-        private Interessada Cliente { get; }
-        private decimal Valor { get; }
+        public Interessada Cliente { get; }
+        public double Valor { get; }
 
-        public Lance(Interessada cliente, decimal valor)
+        public Lance(Interessada cliente, double valor)
         {
             Cliente = cliente;
             Valor = valor;

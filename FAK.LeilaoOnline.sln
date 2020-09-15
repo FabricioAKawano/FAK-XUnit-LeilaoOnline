@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FAK.LeilaoOnline.Core", "Source\FAK.LeilaoOnline.Core\FAK.LeilaoOnline.Core.csproj", "{329A35F2-B303-4403-A4BA-D6E0F6E6A329}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FAK.LeilaoOnline.Core", "Source\FAK.LeilaoOnline.Core\FAK.LeilaoOnline.Core.csproj", "{329A35F2-B303-4403-A4BA-D6E0F6E6A329}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{D389E5CD-6C2A-4A93-8FC5-FF2079AC62A3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4B9F800A-B8E4-4FA9-BFDD-2A4CB1E3175C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FAK.LeilaoOnline.Tests", "Tests\FAK.LeilaoOnline.Tests\FAK.LeilaoOnline.Tests.csproj", "{B1E1277D-A49B-4CBD-8217-9CA9E1E3A1A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +21,17 @@ Global
 		{329A35F2-B303-4403-A4BA-D6E0F6E6A329}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{329A35F2-B303-4403-A4BA-D6E0F6E6A329}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{329A35F2-B303-4403-A4BA-D6E0F6E6A329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1E1277D-A49B-4CBD-8217-9CA9E1E3A1A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1E1277D-A49B-4CBD-8217-9CA9E1E3A1A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1E1277D-A49B-4CBD-8217-9CA9E1E3A1A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1E1277D-A49B-4CBD-8217-9CA9E1E3A1A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{329A35F2-B303-4403-A4BA-D6E0F6E6A329} = {D389E5CD-6C2A-4A93-8FC5-FF2079AC62A3}
+		{B1E1277D-A49B-4CBD-8217-9CA9E1E3A1A4} = {4B9F800A-B8E4-4FA9-BFDD-2A4CB1E3175C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {06920B31-3419-4879-980F-E03B7F87852B}

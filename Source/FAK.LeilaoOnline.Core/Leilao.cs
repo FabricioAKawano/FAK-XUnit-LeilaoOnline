@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
+using System.Globalization;
 
 namespace FAK.LeilaoOnline.Core
 {
@@ -9,13 +11,15 @@ namespace FAK.LeilaoOnline.Core
         private IList<Lance> _lances;
         public IEnumerable<Lance> Lances => _lances;
         public string Peca { get;}
+        public Lance Ganhador { get; set; }
 
         public Leilao(string peca)
         {
             Peca = peca;
+            _lances = new List<Lance>();
         }
 
-        public void RecebeLance(Interessada cliente, decimal valor)
+        public void RecebeLance(Interessada cliente, double valor)
         {
             _lances.Add(new Lance(cliente, valor));
         }
@@ -27,7 +31,10 @@ namespace FAK.LeilaoOnline.Core
 
         public void TerminaPregao()
         {
-
+            Ganhador = Lances
+                .DefaultIfEmpty(new Lance (null, 0))
+                .OrderBy(l => l.Valor)
+                .LastOrDefault();
         }
     }
 }
