@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace FAK.LeilaoOnline.Core
+﻿namespace FAK.LeilaoOnline.Core
 {
     public class Interessada
     {

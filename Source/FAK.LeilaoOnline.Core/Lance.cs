@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace FAK.LeilaoOnline.Core
 {
@@ -11,6 +9,10 @@ namespace FAK.LeilaoOnline.Core
 
         public Lance(Interessada cliente, double valor)
         {
+            if (valor < 0)
+            {
+                throw new InvalidOperationException("Lance inválido.");
+            }
             Cliente = cliente;
             Valor = valor;
         }
